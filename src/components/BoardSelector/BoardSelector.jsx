@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Usb, UsbOff, AlertCircle, CheckCircle } from 'lucide-react';
+import { Usb, AlertCircle, CheckCircle } from 'lucide-react';
 
 /**
  * BoardSelector 컴포넌트
@@ -125,7 +125,7 @@ const BoardSelector = ({ serialManager, onConnectionChange }) => {
           onClick={handleDisconnect}
           className="flex items-center gap-1.5 px-4 py-1.5 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded transition disabled:opacity-50"
         >
-          <UsbOff size={16} />
+          <Usb size={16} />
           연결 해제
         </button>
       ) : (
